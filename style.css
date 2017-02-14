@@ -28,7 +28,7 @@ body {
   height: 200%;
   width: 100%;
   margin: 0 auto;
-  transform: scale(0.75);
+  transform: scale(0.7);
   -webkit-filter: blur(5vw);
   -moz-filter: blur(5vw);
   -ms-filter: blur(5vw);
