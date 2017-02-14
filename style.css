@@ -37,7 +37,7 @@ body {
 .surround {
   position: relative;
   color: #252B37;
-  background-color: #ffffff;
+  background-color: #000000;
   @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
     
   @keyframes textColor {
@@ -74,6 +74,20 @@ body {
 {
   border-color: black;
   background-color: #151823;
+
+  @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
+    
+  @keyframes textColor {
+    0% {
+      color: #7e0fff;
+    }
+    50% {
+      color: #0fffc1;
+    }
+    100% {
+      color: #7e0fff;
+    }
+  }
 }
 
 a:link 
