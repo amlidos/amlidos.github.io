@@ -63,7 +63,7 @@ body {
   color: #ffffff;
 }
 
-.panel-heading
+.panel-default > .panel-heading
 {
   background-color: #000000;
 }
