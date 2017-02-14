@@ -3,7 +3,6 @@ body {
   align-items: center;
   font-family: Helvetica Neue;
   justify-content: center;
-  color: #ffffff;
 }
 
 @mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
@@ -66,4 +65,5 @@ body {
 .panel-default > .panel-heading
 {
   background-color: #000000;
+  color: #ffffff;
 }
