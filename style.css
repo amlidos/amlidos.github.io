@@ -21,7 +21,7 @@ body {
 
   position: absolute;
   content: "";
-  top: 0vw;
+  top: -40vw;
   left: 0;
   right: 0;
   z-index: -1;
