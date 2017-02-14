@@ -56,3 +56,14 @@ body {
 .container{
   background-color: #151823;
 }
+
+.panel
+{
+  background-color: #151823;
+  color: #ffffff;
+}
+
+.panel-heading
+{
+  background-color: #000000;
+}
