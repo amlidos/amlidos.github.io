@@ -75,3 +75,12 @@ body {
 {
   border-color: black;
 }
+
+a:link 
+{
+  color: red;
+}
+
+a:visited{
+  color: DarkRed;
+}
