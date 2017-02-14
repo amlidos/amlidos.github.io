@@ -37,7 +37,7 @@ body {
 .surround {
   position: relative;
   color: #252B37;
-  background-color: #000000;
+  background-color: #ffffff;
   @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
     
   @keyframes textColor {
