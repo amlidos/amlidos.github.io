@@ -10,7 +10,6 @@ body {
 @mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
   &:after {
     position: absolute;
-    content: "";
     top: $y;
     left: $x;
     right: 0;
@@ -37,9 +36,6 @@ body {
 
 .surround {
   position: relative;
-  width: 30vw;
-  height: 30vw;
-  line-height: 30vw;
   color: #252B37;
   background-color: #000000;
   @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
