@@ -57,7 +57,7 @@ body {
   background-color: #151823;
 }
 
-.panel
+.panel-default > .panel-body
 {
   background-color: #151823;
   color: #ffffff;
