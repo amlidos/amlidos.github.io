@@ -3,14 +3,19 @@ body {
   align-items: center;
   font-family: Helvetica Neue;
   justify-content: center;
-  background-color:darken(#1d222b, 4%);
+  color: #ffffff;
 }
 
 @mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
   &:after {
     position: absolute;
     content: "";
+    top: $y;
+    left: $x;
+    right: 0;
     z-index: -1;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
     transform: scale($size);
     -webkit-filter: blur($spread);
@@ -32,7 +37,7 @@ body {
 .surround {
   position: relative;
   color: #252B37;
-  background-color: #151823;
+  background-color: #000000;
   @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
     
   @keyframes textColor {
@@ -46,4 +51,8 @@ body {
       color: #7e0fff;
     }
   }
+}
+
+.container{
+  background-color: #151823;
 }
