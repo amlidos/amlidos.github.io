@@ -1,56 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   display: flex;
   align-items: center;
   font-family: Helvetica Neue;
   justify-content: center;
-  background-color: #151823;
+  background-color: black;
   color: black;
-}
-
-@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
-  &:after {
-    position: absolute;
-    top: $y;
-    left: $x;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale($size);
-    -webkit-filter: blur($spread);
-    -moz-filter: blur($spread);
-    -ms-filter: blur($spread);
-    filter: blur($spread);
-    background: linear-gradient(270deg, $colorA, $colorB);
-    background-size: 200% 200%;
-    animation: animateGlow $duration ease infinite;
-    
-    @keyframes animateGlow {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-    }
-  }
-}
-
-.surround {
-  position: relative;
-  color: #252B37;
-  background-color: #000000;
-  @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
-    
-  @keyframes textColor {
-    0% {
-      color: #7e0fff;
-    }
-    50% {
-      color: #0fffc1;
-    }
-    100% {
-      color: #7e0fff;
-    }
-  }
 }
 
 .container{
@@ -77,40 +36,6 @@ body {
   background: linear-gradient(270deg, #0fffc1, #7e0fff);
   background-size: 200% 200%;
   animation: animateGlow 10s ease infinite;
-
-}
-
-.panel-default > .panel-body
-{
-  background-color: #151823;
-  color: #ffffff;
-}
-
-.panel-default > .panel-heading
-{
-  background-color: #0F1117;
-  color: #ffffff;
-  border-color: black;
-}
-
-.panel
-{
-  border-color: black;
-  background-color: #151823;
-
-  animation: textColor 10s ease infinite;
-    
-  @keyframes textColor {
-    0% {
-      color: #7e0fff;
-    }
-    50% {
-      color: #0fffc1;
-    }
-    100% {
-      color: #7e0fff;
-    }
-  }
 }
 
 @keyframes animateGlow {
@@ -134,6 +59,25 @@ body {
   100% {
     color: #7e0fff;
   }
+}
+
+.panel-default > .panel-body
+{
+  background-color: #151823;
+  color: #ffffff;
+}
+
+.panel-default > .panel-heading
+{
+  background-color: #0F1117;
+  color: #ffffff;
+  border-color: black;
+}
+
+.panel
+{
+  border-color: black;
+  background-color: #151823;
 }
 
 a:link 
