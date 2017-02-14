@@ -1,7 +1,7 @@
 body {
   display: flex;
   align-items: center;
-  font-family: monospace;
+  font-family: Helvetica Neue;
   justify-content: center;
   background-color:darken(#1d222b, 4%);
 }
@@ -10,12 +10,7 @@ body {
   &:after {
     position: absolute;
     content: "";
-    top: $y;
-    left: $x;
-    right: 0;
     z-index: -1;
-    height: 100%;
-    width: 100%;
     margin: 0 auto;
     transform: scale($size);
     -webkit-filter: blur($spread);
@@ -34,7 +29,7 @@ body {
   }
 }
 
-.container {
+.surround {
   position: relative;
   color: #252B37;
   background-color: #151823;
